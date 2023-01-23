@@ -16,7 +16,7 @@
     /* height: 300px; */
 }
 .borderDebug{
-    border: 5px dotted red;
+    border: 2px dotted red;
 }
 
 .debug.headerTopContainer{
@@ -50,10 +50,36 @@
 
 }
 
+footer.debug{
+    height: 500px;
+    background-color: rgb(160, 58, 58);
+}
+
+.debug.footerTop{
+    height: 400px;
+    background-color: rgb(0, 81, 255);
+}
+
+.debug.fColumnBig{
+    background-color: rgb(191, 0, 255);
+}
+
+.debug.fColumnSmall{
+    background-color: chartreuse;
+}
+
+.debug.footerBottom{
+    height: 100px;
+}
+
+.debug.footerBottomContainer{
+    height: 50px;
+    background-color:antiquewhite;
+}
 /*actual CSS rules*/
 
 /*metti i container FLEX qui*/
-#headerTop, .headerTopContainer, div ul, .block, .info{
+#headerTop, .headerTopContainer, div ul, .block, .info, .footerTop, .footerTopContainer, .footerBottomContainer{
     display: flex;
 }
 
@@ -120,8 +146,34 @@
 .lastBlock{
     text-align: center;
 }
+
 .quadratoFinale{
     width: 75%;
     margin: 45px auto;
     text-align: center;
+}
+footer{
+    text-align: center;
+    width: 100%;
+}
+.footerTop{
+    justify-content: center;
+    width: 100%;
+    padding:10px 0px 40px 0px;
+}
+.footerTopContainer{
+    width: 75%;
+}
+
+.fColumnBig{
+    width: 28%;
+}
+
+.fColumnSmall{
+    width: 18%;
+}
+
+.footerBottom{
+    width: 75%;
+    border-top: 2px solid black;
 }
