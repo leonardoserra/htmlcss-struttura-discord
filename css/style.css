@@ -6,3 +6,32 @@
 }
 
 /*DEBUG*/
+#headerTop{
+    background-color: aquamarine;
+    height: 50px;
+    width: 100%;
+}
+
+#headerBottom{
+    background-color: blue;
+    height: 300px;
+}
+
+.headerTopContainer{
+    width: 80%;
+    border: 1px dotted black;
+    background-color: yellow;
+}
+
+
+/*actual CSS rules*/
+.center{
+    /* text-align: center; */
+}
+.headerTopContainer, div ul{
+    display: flex;
+}
+
+.headerTopContainer{
+    justify-content:space-between;
+}
