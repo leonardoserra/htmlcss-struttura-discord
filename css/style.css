@@ -6,32 +6,43 @@
 }
 
 /*DEBUG*/
-#headerTop{
-    background-color: aquamarine;
+#headerTop.debug{
+    background-color: rgb(0, 198, 132);
     height: 50px;
-    width: 100%;
+    
 }
 
-#headerBottom{
+.debug#headerBottom{
     background-color: blue;
     height: 300px;
 }
-
-.headerTopContainer{
-    width: 80%;
+.borderDebug{
     border: 1px dotted black;
+}
+
+.debug.headerTopContainer{
     background-color: yellow;
 }
 
 
 /*actual CSS rules*/
-.center{
-    /* text-align: center; */
-}
-.headerTopContainer, div ul{
+#headerTop, .headerTopContainer, div ul{
     display: flex;
+}
+
+#headerTop{
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    
 }
 
 .headerTopContainer{
     justify-content:space-between;
+    padding: 5px;
+    min-width: 75%;
+}
+
+.headerTopContainer ul{
+    padding: 0 10px;
 }
