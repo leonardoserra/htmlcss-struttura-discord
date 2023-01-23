@@ -27,10 +27,10 @@
     background-color: pink;
     height: 250px;
 }
-
-.debug.whiteBackgroundBlock{
+.debug.greyBackgroundBlock, .debug.whiteBackgroundBlock{
     height: 400px;
 }
+
 
 .debug.columnBig{
     background-color: orange;
@@ -38,19 +38,16 @@
 
 .debug.columnSmall{
     background-color: aqua;
-
+    
 }
 
 /*actual CSS rules*/
 
 /*metti i container FLEX qui*/
-#headerTop, .headerTopContainer, div ul, .whiteBackgroundBlock, .info{
+#headerTop, .headerTopContainer, div ul, .whiteBackgroundBlock, .greyBackgroundBlock, .info, .infoReverse{
     display: flex;
 }
 
-.whiteBackgroundBlock{
-    background-color: white;
-}
 
 #headerTop{
     width: 100%;
@@ -80,13 +77,22 @@
     display: inline-block;
     min-width: 70%;
 }
-
-.whiteBackgroundBlock{
+.greyBackgroundBlock{
+    background-color: grey;
     width: 100%;
     justify-content: center;
     align-items: center;
 }
 
+.whiteBackgroundBlock{
+    background-color: white;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.info.reverse{
+    flex-direction:row-reverse;
+}
 .info{
     width: 75%;
     height: 300px;
