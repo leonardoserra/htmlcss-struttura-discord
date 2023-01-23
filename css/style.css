@@ -23,6 +23,11 @@
     background-color: yellow;
 }
 
+.debug.headerBottomContainer{
+    background-color: pink;
+    height: 250px;
+}
+
 
 /*actual CSS rules*/
 
@@ -48,4 +53,14 @@
 
 .unorderedList a{
     padding: 0 35px;
+}
+
+#headerBottom{
+    text-align: center;
+    vertical-align: middle;
+}
+.headerBottomContainer{
+    display: inline-block;
+    min-width: 70%;
+    margin: 50px auto;
 }
