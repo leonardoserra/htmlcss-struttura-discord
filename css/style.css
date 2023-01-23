@@ -8,13 +8,14 @@
 /*DEBUG*/
 #headerTop.debug{
     background-color: rgb(0, 198, 132);
-    height: 50px;
+    /* height: 50px; */
 }
 
 .debug#headerBottom{
     background-color: blue;
     /* height: 300px; */
 }
+
 .borderDebug{
     border: 2px dotted red;
 }
@@ -73,13 +74,15 @@ footer.debug{
 }
 
 .debug.footerBottomContainer{
-    height: 50px;
+    /* height: 50px; */
     background-color:antiquewhite;
 }
+
+
 /*actual CSS rules*/
 
 /*metti i container FLEX qui*/
-#headerTop, .headerTopContainer, div ul, .block, .info, .footerTop, .footerTopContainer, .footerBottomContainer{
+#headerTop, .headerTopContainer, div ul, .block, .info, .footerTop, .footerTopContainer, .footerBottom,  .footerBottomContainer{
     display: flex;
 }
 
@@ -176,4 +179,14 @@ footer{
 .footerBottom{
     width: 75%;
     border-top: 2px solid black;
+    align-items: flex-end;
+}
+
+.footerBottom{
+    justify-content: center;
+    width: 100%;
+}
+.footerBottomContainer{
+    width: 75%;
+    justify-content: space-between;
 }
