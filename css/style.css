@@ -27,16 +27,24 @@
     background-color: pink;
     height: 250px;
 }
+
 .debug.whiteBackgroundBlock{
-    width: 100%;
     height: 400px;
 }
 
+.debug.columnBig{
+    background-color: orange;
+}
+
+.debug.columnSmall{
+    background-color: aqua;
+
+}
 
 /*actual CSS rules*/
 
 /*metti i container FLEX qui*/
-#headerTop, .headerTopContainer, div ul, main, .whiteBackgroundBlock{
+#headerTop, .headerTopContainer, div ul, .whiteBackgroundBlock, .info{
     display: flex;
 }
 
@@ -74,5 +82,19 @@
 }
 
 .whiteBackgroundBlock{
-    margin: 0;
+    width: 100%;
+    justify-content: center;
+}
+
+.info{
+    width: 500px;
+    height: 300px;
+}
+
+.columnBig{
+    width: 60%;
+}
+
+.columnSmall{
+    width: 40%;
 }
