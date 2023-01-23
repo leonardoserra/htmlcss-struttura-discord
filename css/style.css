@@ -44,7 +44,7 @@
 /*actual CSS rules*/
 
 /*metti i container FLEX qui*/
-#headerTop, .headerTopContainer, div ul, .whiteBackgroundBlock, .greyBackgroundBlock, .info, .infoReverse{
+#headerTop, .headerTopContainer, div ul, .block, .info{
     display: flex;
 }
 
@@ -77,18 +77,20 @@
     display: inline-block;
     min-width: 70%;
 }
-.greyBackgroundBlock{
-    background-color: grey;
+
+.block{
     width: 100%;
     justify-content: center;
     align-items: center;
 }
 
-.whiteBackgroundBlock{
+.greyBackground {
+    background-color: grey;
+}
+
+.whiteBackground{
     background-color: white;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
+    
 }
 .info.reverse{
     flex-direction:row-reverse;
