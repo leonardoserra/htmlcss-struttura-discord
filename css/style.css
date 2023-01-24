@@ -138,11 +138,11 @@ footer.debug{
     height: 300px;
 }
 
-.columnBig{
+.info > .columnBig{
     width: 60%;
 }
 
-.columnSmall{
+.info > .columnSmall{
     width: 40%;
 }
 
@@ -159,13 +159,15 @@ footer{
     text-align: center;
     width: 100%;
 }
+
+.footerTopContainer{
+    width: 75%;
+}
+
 .footerTop{
     justify-content: center;
     width: 100%;
     padding:10px 0px 40px 0px;
-}
-.footerTopContainer{
-    width: 75%;
 }
 
 .fColumnBig{
@@ -176,17 +178,12 @@ footer{
     width: 18%;
 }
 
-.footerBottom{
-    width: 75%;
-    border-top: 2px solid black;
-    align-items: flex-end;
-}
-
-.footerBottom{
-    justify-content: center;
-    width: 100%;
-}
 .footerBottomContainer{
     width: 75%;
     justify-content: space-between;
+}
+.footerBottom{
+    border-top: 2px solid black;
+    align-items: center;
+    justify-content: center;
 }
